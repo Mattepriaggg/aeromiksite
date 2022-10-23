@@ -21,4 +21,18 @@ submit_Button.addEventListener("click", function() {
 
 
 // MODAL FOTO
+function togglePopup1(){
+  document.getElementById("popup-1").classList.toggle("activePOP")
+}
 
+function togglePopup2(){
+  document.getElementById("popup-2").classList.toggle("activePOP")
+}
+
+function togglePopup3(){
+  document.getElementById("popup-3").classList.toggle("activePOP")
+}
+
+function togglePopup4(){
+  document.getElementById("popup-4").classList.toggle("activePOP")
+}

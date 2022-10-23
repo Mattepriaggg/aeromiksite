@@ -9,9 +9,11 @@
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.19.3, nicepage.com">
 
-
     <link rel="stylesheet" href="style.css" >
     <script type="text/javascript" src="animation.js" defer=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
     <style></style>
 
     <title></title>
@@ -53,10 +55,10 @@
 
     </div>
     <div id="foto" class="fade-in">
-    <div id="img1"><img id="img11" class="foto" src="img/foto1.jpeg" alt=""></div>
-    <div id="img2"><img id="img12" class="foto" src="img/foto2.JPG" alt=""></div>
-    <div id="img3"><img id="img13" class="foto" src="img/foto3.jpg" alt=""></div>
-    <div id="img4"><img id="img14" class="foto" src="img/foto4.jpg" alt=""></div>
+    <div onclick="togglePopup1()" id="img1"><img id="img11" class="foto" src="img/foto1.jpeg" alt=""></div>
+    <div onclick="togglePopup2()" id="img2"><img id="img12" class="foto" src="img/foto2.JPG" alt=""></div>
+    <div onclick="togglePopup3()" id="img3"><img id="img13" class="foto" src="img/foto3.jpg" alt=""></div>
+    <div onclick="togglePopup4()" id="img4"><img id="img14" class="foto" src="img/foto4.jpg" alt=""></div>
     </div>
     
     
@@ -83,9 +85,46 @@
 
     
      <!--modal foto-->
+    <div id="popup-1" class="popup">
+        <div class="overlay"></div>
+            <div class="content">
+                <div onclick="togglePopup1()" class="close-btn">&times;</div>
+                <img id="img1in" src="img/foto1.jpeg" alt="">
+                <h1 id="contImg1" class="center">Summer Nights Festival, 
+                    <br> (VE) 2022 
+                    <br>(Aeromik tour 2022)</h1>
+            </div>
+    </div>
 
+    <div id="popup-2" class="popup">
+        <div class="overlay"></div>
+            <div class="content">
+                <div onclick="togglePopup2()" class="close-btn">&times;</div>
+                <img id="img2in" src="img/foto2.JPG" alt="">
+                <h1 id="contImg1">Beautiful festival, 
+                    <br>Bologna (BO) 2019 </h1>
+            </div>
+    </div>
 
+    <div id="popup-3" class="popup">
+        <div class="overlay"></div>
+            <div class="content">
+                <div onclick="togglePopup3()" class="close-btn">&times;</div>
+                <img id="img3in" src="img/foto3.JPG" alt="">
+                <h1 id="contImg1">Beautiful festival, 
+                    <br>Bologna (BO) 2019 </h1>
+            </div>
+    </div>
     
+    <div id="popup-4" class="popup">
+        <div class="overlay"></div>
+            <div class="content">
+                <div onclick="togglePopup4()" class="close-btn">&times;</div>
+                <img id="img4in" src="img/foto4.JPG" alt="">
+                <h1 id="contImg1">Beautiful festival, 
+                    <br>Bologna (BO) 2019 </h1>
+            </div>
+    </div>
 
 
 
