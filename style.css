@@ -100,39 +100,11 @@
 }
 
 /*-- MEDIA DEVICE --*/
-/*pc*/
-@media (max-width: 1700px) {
 
-}
-/*tablet*/
-@media (max-width: 1550px) {
-    #foto2int{
-        width: 0%;
-        height: 0%;
-    }
-    #foto1int{
-        width: 0%;
-        height: 0%;
-    }
-    #foto3{
-        width: 0%;
-    }
-    #foto2{
-        width: 0%;
-    }   
-    #foto{
-        width: 0%;
-        left: 100vh;
-    }
-
-}
 /*telefono*/
-@media (max-width: 500px) {
-    .socialButton{
-        
-    }
+@media (max-width: 1002px) {
     #logo{
-        width: 30vh;
+        width: 40vh;
     }
     #foto{
         width: 0%;
