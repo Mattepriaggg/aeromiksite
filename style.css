@@ -101,18 +101,11 @@
 
 /*-- MEDIA DEVICE --*/
 /*pc*/
+@media (max-width: 1700px) {
 
+}
 /*tablet*/
 @media (max-width: 1550px) {
-    #foto3int{
-        margin-top: 10vh;
-        width: 35vh;
-        border-radius: 10px;
-        box-shadow: 2px 2px 20px #000000;
-    }
-    #foto3int{
-        margin-left: -200px;
-    }
     #foto2int{
         width: 0%;
         height: 0%;
@@ -134,9 +127,12 @@
 
 }
 /*telefono*/
-@media (max-width: 1002px) {
+@media (max-width: 500px) {
+    .socialButton{
+        
+    }
     #logo{
-        width: 40vh;
+        width: 30vh;
     }
     #foto{
         width: 0%;
