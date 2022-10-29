@@ -1,0 +1,68 @@
+.form1{
+    margin-top: 10vh;
+    margin-left: 20vh;
+    width: 50vh;
+}
+.nameF{
+    font-size: 30px;
+}
+.emailF{
+    margin-top: 2vh;
+    font-size: 30px;
+}
+.contF{
+    margin-top: 2vh;
+    font-size: 30px;
+}
+#name-3b9a{
+    margin-left: 5vh;
+    border: solid 2px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #ffffff53;
+}
+#email-3b9a{
+    margin-left: 5vh;
+    border: solid 2px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #ffffff53;
+}
+#message-3b9a{
+    border: solid 2px;
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #ffffff53;
+    resize: none;
+    border-radius: 10px;
+}
+.submit_Button{
+    width: 20vh;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+}
+.submit_Button:hover{
+    border: #888;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.borderyes{
+    border-bottom: 2px solid rgb(4, 255, 0);
+    background-color: rgba(6, 208, 6, 0.581);
+    
+}
+
+#backBtn{
+    margin-left: 20vh;
+    margin-top: 5vh;
+    width: 20vh;
+    height: 5vh;
+    border-radius: 10px;
+    text-decoration: none;
+}
