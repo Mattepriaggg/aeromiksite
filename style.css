@@ -101,15 +101,7 @@
 
 /*-- MEDIA DEVICE --*/
 /*pc*/
-@media (max-width: 1700px) {
-    #foto3int{
-        margin-left: -55vh;
-        margin-top: 35vh;
-        width: 40vh;
-        border-radius: 11px;
-        box-shadow: 2px 2px 20px #000000;
-    }
-}
+
 /*tablet*/
 @media (max-width: 1550px) {
     #foto3int{
