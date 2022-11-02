@@ -13,6 +13,7 @@
 
 #logo{
     width: 15%;
+    position: relative;
 }
 #bg-logo{
     width: 100%;
@@ -99,6 +100,32 @@
     border-radius: 10px;
     box-shadow: 2px 2px 20px #000000;
 }
+.sto{
+    width: 100vh;
+    margin-left: 90vh;
+    margin-top: -30vh;
+    font-size: 13px;
+}
+#scopri{
+    color: blue;
+    font-size: 20px;
+}
+#scopri:hover{
+    color: blue;
+    cursor: pointer;
+}
+.panel-sto{
+    font-size: 0px;
+}
+.panin-sto{
+    font-size: 14px;
+}
+#storia{
+    color: #e61919;
+    font-size: 27px;
+    text-shadow: 2px 2px 10px #ffffffe9;
+}
+
 
 
 /*-- MEDIA DEVICE --*/
@@ -139,6 +166,16 @@
                 .sc3{
                     width: 2px;
                 }
+    .sto{
+        width: 0%;
+        height: 0%;
+        font-size: 0%;
+    }
+    #scopri{
+        height: 0%;
+        width: 0%;
+        font-size: 0%;
+    }
 
 }
 
@@ -156,14 +193,8 @@
 .fade-in{
     animation: fadeIn 2s;
 }
-#firma{
-    width: 0%;
-    height: 0%;
-    opacity: 0%;
-}
-#firma2{
-    height: 0%;
-}
+
+
 
 /*slide----------------------------------------------*/
 .mySlides {display: none}

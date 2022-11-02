@@ -3,6 +3,12 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+#firma{
+    width: 40%;
+    height: 50%;
+    margin-left: 70vh;
+    margin-top: -100vh;
+}
 .form1{
     margin-top: 10vh;
     margin-left: 20vh;
@@ -72,6 +78,7 @@
     text-decoration: none;
 }
 
+
 /*-- MEDIA DEVICE --*/
 
 /*telefono*/
@@ -121,5 +128,10 @@
         height: 5vh;
         border-radius: 10px;
         text-decoration: none;
+    }
+    #firma{
+        width: 0px;
+        height: 0px;
+        margin-left: -30vh;
     }
 }

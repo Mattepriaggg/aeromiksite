@@ -15,3 +15,14 @@ int.addEventListener("click", function() {
 });
 
 
+
+//---- scroll storia ----
+let pansto = document.querySelector('.panel-sto');
+let togsto = document.querySelector('.toggle-sto');
+
+togsto.addEventListener("click", function() {
+    
+    pansto.classList.toggle('panin-sto');
+});
+
+
