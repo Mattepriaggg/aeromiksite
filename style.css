@@ -118,6 +118,9 @@
         margin-left: 100px;
         margin-top: -10px;
     }
+    #foto1int{
+        width: 30vh;
+    }
     .socialButton{
         width: 25vh;
         margin-top: 10px;
@@ -127,10 +130,13 @@
                     padding-left: 60vh;
                 }
                 .sc2{
-                    width: 0px;
+                    width: 2px;
                     margin-left: -55vh;
                     margin-right: 30vh;
                     z-index: 1;
+                }
+                .sc3{
+                    width: 2px;
                 }
 
 }
