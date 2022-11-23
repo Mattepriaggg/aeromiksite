@@ -26,3 +26,18 @@ togsto.addEventListener("click", function() {
 });
 
 
+//button
+alert("Aeromik ti fa un regalo di Natale, trova il pulsante e riscattalo!" )
+
+var name = prompt ("scrivi qui il tuo nome per ricevere il regalo");
+
+if (name == null || name == "") {
+    txt = "Riscrivi il nome";
+}
+
+else {
+    txt = "Salve," + name + ",clicca ok per riscattare la sorpresa";
+}
+
+
+
