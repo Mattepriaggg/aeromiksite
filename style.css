@@ -182,11 +182,14 @@
             opacity: 100%;
         }
     }
+
+
     @keyframes fadeIn-logo-img {
         0%{
             opacity: 0%;
             width: 85vw;
             height: 25vh;
+            margin-top: 40vh;
         }
         5%{
             opacity: 20%;
@@ -198,14 +201,21 @@
             margin-top: 40vh;
             position: relative;        
         }
-        100%{
+        50%{
             opacity: 100%;
-        
+            width: 100vw;
+            height: 25vh;
+            margin-top: 40vh;
+            position: relative;        
+        }
+        100%{
+            opacity: 0%;
+            margin-top: 0vh;
         }
     }
     
     .fade-in{
-        animation: fadeIn-logo 1s;
+        animation: fadeIn-logo 2s;
     
     }
     
