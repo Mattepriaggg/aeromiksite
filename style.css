@@ -1,295 +1,218 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
 
+.fade-in-img{
+    width: 0vw;
+    height: 0vh;
+}
+
+
+/*SECTION*/
+    .body--bg{
+        background-repeat: no-repeat;
+        background-size:contain;
+        z-index: -1;
+        top: -15vh;
+        width: 100vw;
+        background-color: black;
+    }
+    
+    /*menu sec*/
+    .menu--box{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 10vh;
+        z-index: 2;
+        background-image: linear-gradient(black, rgb(0, 0, 0), rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.525), rgba(255, 0, 0, 0));
+    }
+    .menu-in{
+        position: relative;
+        left: -5vw;
+        z-index: 2;
+    }
+
+        /*text in menu*/
+    .menu-t-in{
+        font-size: 1vw;
+        text-decoration: none;
+        color: rgb(254, 254, 254);
+        position: relative;
+        top: 2vh;
+        margin-left: 10vw;
+        transition: all 0.3s cubic-bezier(.215, .61, .355, 1);
+    }
+    .menu-t-in:hover{
+        color: rgb(117, 184, 220);
+        transition: all 0.4s cubic-bezier(.215, .61, .355, 1);
+        font-size: 1.5vw;
+        text-shadow: 2px 2px 20px #ffffff;
+    }
+
+    /*Home page*/
+    .page{
+        height: 100vh;
+    }
+    #logo{
+        width: 40vw;
+        height: 22vw;
+        position: relative;
+        top: 20vh;
+        opacity: 80%;
+    }
+    .Button-box-social{
+        width: 100vw;
+        height: 40vh;
+        position: relative;
+        top: 10vh;
+    }
+    .socialButton{
+        width: 15vw;
+        height: 5vh;
+        border-radius: 0.6vw;
+        color: rgb(255, 254, 254);
+        text-shadow: 0px 0px 5px #000000;
+        background-color: rgba(240, 248, 255, 0);
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(.215, .61, .355, 1);
+    }
+    #igButton{
+        border: 2px solid #ffffff;
+        background-color: rgba(240, 248, 255, 0);
+        transition: all 0.4s cubic-bezier(.215, .61, .355, 1);
+    }
+    #igButton:hover{border: 2px solid #faa700; transition: all 0.4s cubic-bezier(.215, .61, .355, 1);}
+    
+    #ytButton{
+        border: 2px solid #ffffff;
+        background-color: rgba(240, 248, 255, 0);
+        position: relative;
+        left: -20vw;
+        top: -5vh;
+        transition: all 0.4s cubic-bezier(.215, .61, .355, 1);
+    }
+    #ytButton:hover{border: 2px solid #fa0000; transition: all 0.4s cubic-bezier(.215, .61, .355, 1);}
+    
+    #mailButton{
+        border: 2px solid #ffffff;
+        background-color: rgba(240, 248, 255, 0);
+        position: relative;
+        left: 20vw;
+        top: -10vh;
+        transition: all 0.4s cubic-bezier(.215, .61, .355, 1);
+    }
+    #mailButton:hover{border: 2px solid #a7fa00; transition: all 0.4s cubic-bezier(.215, .61, .355, 1);
+    }
+
+
+
+    /*Chi sono*/
+    #chi{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(162, 0, 255, 0.183));
+    }
+    #storia{
+        position: relative;
+        top: 25vh;
+        font-size: 1.5vw;
+        color: white;
+        text-shadow: 2px 2px 20px #000000;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    /*Contattami*/
+    #contattami{
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(rgba(162, 0, 255, 0.183), rgba(0, 0, 255, 0.173));
+    }
+
+ /*---- ESSENTIAL CLASS ----*/
 .center{ 
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center
+    text-align: center;
 }
-
-#logo{
-    width: 15%;
+.fixed{
+    position: fixed;
+}
+.relative{
     position: relative;
 }
-#bg-logo{
-    width: 100%;
-    height: 100vh;
-}
-.padding-txt{
-    margin-left: 10vh;
+.black-bg{
+    background-color: rgb(0, 0, 0);
 }
 
-.sec2{
-    background: linear-gradient(red, rgb(255, 255, 255));
-    width: 100%;
-    height: 100%;
-}
-
-/*------------------------------*/
-/*SOCIAL*/
-.socialButton{
-    border-radius: 10px;
-    width: 50vh;
-    height: 10vh;
-    margin-top: 5vh;
-    margin-left: 5vh;
-}
-#igButton{
-    border: solid rgb(2, 2, 2);
-    background-color: rgba(255, 255, 255, 0);
-}
-#igButton:hover{
-    border: solid rgb(251, 248, 248);
-    background-color: rgba(255, 255, 255, 0);
-    cursor: pointer;
-    color: rgba(255, 255, 0, 0.645);
-    text-shadow: 0px 0px 10px #000000;
-}
-#ytButton{
-    border: solid rgb(2, 2, 2);
-    background-color: rgba(255, 255, 255, 0);
-}
-#ytButton:hover{
-    border: solid rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0);
-    cursor: pointer;
-    color: #e61919;
-    text-shadow: 0px 0px 10px #ffffff;
-}
-
-#mailButton{
-    border: solid rgb(2, 2, 2);
-    background-color: rgba(255, 255, 255, 0);
-}
-#mailButton:hover{
-    border: solid rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0);
-    cursor: pointer;
-    color: #e61997;
-    text-shadow: 0px 0px 10px #ffffff;
-}
-
-/*------------------------------*/
-/*FOTO*/
-#foto{
-    width: 10%;
+.title-box{
+    width: 100vw;
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
     position: relative;
-    top: -35vh;
-    left: 120vh;
-    justify-content: center; 
-    display: flex;
-}
-#foto1int{
-    width: 40vh;
-    border-radius: 10px;
-    box-shadow: 2px 2px 20px #000000;
-}
-#foto2int{
-    margin-left: 5vh;
-    width: 24vh;
-    border-radius: 10px;
-    box-shadow: 2px 2px 20px #000000;
-}
-#foto3int{
-    margin-left: 5vh;
-    width: 40vh;
-    border-radius: 10px;
-    box-shadow: 2px 2px 20px #000000;
-}
-.sto{
-    width: 100vh;
-    margin-left: 90vh;
-    margin-top: -30vh;
-    font-size: 13px;
-}
-#scopri{
-    color: blue;
-    font-size: 20px;
-}
-#scopri:hover{
-    color: blue;
-    cursor: pointer;
-}
-.panel-sto{
-    font-size: 0px;
-}
-.panin-sto{
-    font-size: 14px;
-}
-#storia{
-    color: #e61919;
-    font-size: 27px;
-    text-shadow: 2px 2px 10px #ffffffe9;
+    top: 10vh;
+    text-shadow: 2px 2px 20px #b2b2b2d7;
 }
 
 
 
-/*-- MEDIA DEVICE --*/
 
-/*telefono*/
-@media (max-width: 1002px) {
-    #logo{
-        width: 30vh;
-    }
-    /*fare scroll immagini verso sinistra e destra*/
-    #foto{
-        width: 0%;
-        height: 0%;
-        top: 5vh;
-        left: 10px;
-    }
-    #foto3int{
-        margin-left: 100px;
-        margin-top: -10px;
-    }
-    #foto1int{
-        width: 30vh;
-    }
-    .socialButton{
-        width: 25vh;
-        margin-top: 10px;
-    }
-                /*scroll img*/
-                .scrollin{
-                    padding-left: 60vh;
-                }
-                .sc2{
-                    width: 2px;
-                    margin-left: -55vh;
-                    margin-right: 30vh;
-                    z-index: 1;
-                }
-                .sc3{
-                    width: 2px;
-                }
-    .sto{
-        width: 0%;
-        height: 0%;
-        font-size: 0%;
-    }
-    #scopri{
-        width: 0px;
-        height: 0px;
-        font-size: 0px;
-    }
-    #storia{
-        width: 0px;
-        height: 0px;
-        font-size: 0px;
-    }
-
-}
-
-
-/*-- ANIMATION --*/
 @keyframes fadeIn {
     0%{
-        opacity: 0%;
     }
     100%{
-        opacity: 100%;
     }
 }
-
-.fade-in{
-    animation: fadeIn 2s;
+@media (max-width: 502px) {
+    @keyframes fadeIn-logo {
+        0%{
+            opacity: 0%;
+        }
+        50%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+    @keyframes fadeIn-logo-img {
+        0%{
+            opacity: 0%;
+            width: 85vw;
+            height: 25vh;
+        }
+        5%{
+            opacity: 20%;
+        }
+        20%{
+            opacity: 100%;
+            width: 100vw;
+            height: 25vh;
+            margin-top: 40vh;
+            position: relative;        
+        }
+        100%{
+            opacity: 100%;
+        
+        }
+    }
+    
+    .fade-in{
+        animation: fadeIn-logo 1s;
+    
+    }
+    
+    .fade-in-img{
+        animation: fadeIn-logo-img 2s;
+        opacity: 100%;
+        width: 0vw;
+        height: 0vh;
+    }
 }
-
-
-
-/*slide----------------------------------------------*/
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
-
-/*regalo*/
