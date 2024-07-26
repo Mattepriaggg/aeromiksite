@@ -88,6 +88,7 @@
 			
 			<button onclick="salvaDati()">Salva per dopo</button>
 			<button onclick="caricaDati()">Carica Dati precedenti</button>
+			<button onclick="resetDati()">Reset</button>
 		
 		
 	</div>
@@ -97,20 +98,31 @@
 		let ogg = ['data', 'titolo', 'citta', 'prov', 'via', 'link', 'org', 'info'];
 
         function salvaDati() {
+			// salva dati scritti ora
             for (let i = 0; i < ogg.length; i++) {
                 var testo = document.getElementById(ogg[i]).value;
                 localStorage.setItem(ogg[i], testo);
             }
         }
-
+		
         function caricaDati() {
-            for (let i = 0; i < ogg.length; i++) {
-                var dati = localStorage.getItem(ogg[i]);
+			for (let i = 0; i < ogg.length; i++) {
+				var dati = localStorage.getItem(ogg[i]);
                 if (dati) {
-                    document.getElementById(ogg[i]).value = dati;
+					document.getElementById(ogg[i]).value = dati;
                 }
             }
         }
+		
+		function resetDati() {
+			let defau = ''
+			for (let i = 0; i < ogg.length; i++) {
+				var dati = localStorage.getItem(ogg[i]);
+				if (dati) {
+					document.getElementById(ogg[i]).value = defau;
+				}
+			}
+		}
 	</script>
 	
 
