@@ -8,7 +8,6 @@
 
 *{
     margin: 0;
-
     font-family: 'Roboto', sans-serif;
 }
 
@@ -76,7 +75,8 @@ a{
 
 /* tamplate menu */
 .disc, header {
-    width: 100%; height: 50px;     
+    width: 100%; height: 50px;   
+    padding: 0;  
     /* border: solid red 2px; */
 }
     header ul {
