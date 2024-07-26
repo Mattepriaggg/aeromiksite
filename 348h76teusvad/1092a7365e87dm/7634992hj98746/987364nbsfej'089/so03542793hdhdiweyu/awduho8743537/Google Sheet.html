@@ -99,7 +99,7 @@
         function salvaDati() {
             for (let i = 0; i < ogg.length; i++) {
                 var testo = document.getElementById(ogg[i]).value;
-                localStorage.setItem('oggi', testo);
+                localStorage.setItem(ogg[i], testo);
             }
         }
 
@@ -107,7 +107,7 @@
 			let x = 0; // variabile per contare quante volte ha cliccato
 
             for (let i = 0; i < ogg.length; i++) {
-                var dati = localStorage.getItem('oggi');
+                var dati = localStorage.getItem(ogg[i]);
                 if (dati) {
                     document.getElementById(ogg[i]).value = dati;
                 }
