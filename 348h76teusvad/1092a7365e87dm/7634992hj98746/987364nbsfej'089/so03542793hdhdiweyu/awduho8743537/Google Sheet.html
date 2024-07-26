@@ -75,7 +75,7 @@
 
 			<br>
 			<label style="color: white;" for="">Maggiorni info (visibile solo se cliccata la card dell' evento)</label> <br>
-			<textarea  name="info" placeholder="Maggiorni informaizoni"></textarea>
+			<textarea id="info" name="info" placeholder="Maggiorni informaizoni"></textarea>
 
 			<br><br>
 				<label style="color: white;" for="verifica">Inserisci la password:</label> <br>
@@ -94,7 +94,7 @@
 
 	<script>
 		// salva i dati per la prox volta
-		let ogg = ['data', 'titolo', 'citta', 'prov', 'via', 'link', 'org'];
+		let ogg = ['data', 'titolo', 'citta', 'prov', 'via', 'link', 'org', 'info'];
 
         function salvaDati() {
             for (let i = 0; i < ogg.length; i++) {
