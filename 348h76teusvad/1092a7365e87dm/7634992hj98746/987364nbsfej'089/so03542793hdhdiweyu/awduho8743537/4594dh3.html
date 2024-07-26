@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aeromik | Pass</title>
+    <meta name="Crated by" content="Priamix">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/bio.css">
+    <script class="u-script" type="text/javascript" src="/script.js" defer=""></script>
+    <!--font google-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- itim font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <!--icon-->
+    <link rel="shortcut icon" href="icon.png">
+    <!--DEVICE viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--animazioni scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body>
+    <img class="bg-img" src="/img/448432418_384725527391218_4049341889646363649_n.jpg" alt="">
+    
+    <div class="title">
+        <h1>AEROMIK <br> Pass</h1>
+        <div id="line-title" class="center">
+            <div></div>
+        </div>
+    </div>
+    <section class="cont">
+        <form onsubmit="event.preventDefault(); checkInput();">
+            <label for="myInput">Inserisci la parola:</label>
+            <input type="password" id="myInput" name="myInput">
+            <button type="submit">Invia</button>
+        </form>
+    </section>
+    <script>
+        function checkInput() {
+            var input = document.getElementById("myInput").value;
+            var wr = [65, 101, 46, 48, 48];
+
+            // Confronta la lunghezza della parola inserita con quella corretta
+            if (input.length !== wr.length) {
+                alert("La parola inserita non è corretta.");
+                return;
+            }
+
+            // Confronta i caratteri della parola inserita con i valori corretti
+            for (var i = 0; i < input.length; i++) {
+                if (input.charCodeAt(i) !== wr[i]) {
+                    alert("La parola inserita non è corretta.");
+                    return;
+                }
+            }
+
+            // Se tutte le verifiche sono superate, reindirizza alla pagina di destinazione
+            window.location.href = "Google Sheet.html";
+        }
+    </script>
+</body>
+</html>

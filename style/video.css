@@ -1,0 +1,28 @@
+
+.main-video {
+    /* border: solid red 2px; */
+
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    height: 100%;
+    width: 100%;
+
+    flex-wrap: wrap;
+
+}
+    .right-video {
+        /* border: solid red 2px; */
+        margin-right: 10vw;
+        margin-left: 10vw;
+    } 
+    .left-video {
+        /* border: solid red 2px; */
+        margin-left: 10vw;
+        margin-right: 10vw;
+    } 
+    video {
+        margin-top: 50px;
+    } 
+
+    

@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.center{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+#loading {
+    /* border: solid red 2px; */
+    font-size: 60px;
+}
+
+
+#content {
+    /* border: solid red 2px; */
+    width: 80%;
+    padding-bottom: 100px;
+
+    margin-left: 10%;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+#content .data-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    font-size: 10px;
+    width: 300px;
+    min-width: 50px;
+    height: fit-content;
+    
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+    
+    background-color: rgba(0, 0, 0, 0.459);
+    box-shadow: 0px 0px 20px #8888882c;
+    border-radius: 10px;
+    
+    min-height: 150px;
+    
+    cursor: default;
+    
+    /* border: solid red 2px; */
+}
+.data-container h1 {
+    color: rgba(255, 255, 255, 0.849);
+
+}
+    #content #future_event{
+        width: 100px;
+        padding-bottom: 5px;
+        content: "new";
+        background-color: rgb(114, 0, 0);
+
+        box-shadow: 5px 0px 20px #960000;
+
+        border-radius: 10px 0px 10px 0px;
+        
+        position: relative;
+        top: -20px;
+        left: -120px;
+
+    }
+    #event_date {
+        width: fit-content;
+        margin-bottom: 10px;
+        border-bottom: solid white 0.5px;
+    }
+    #content #provincia {
+        font-size: 15px;
+    }
+
+    #content a {
+        color: rgb(165, 165, 165);
+        font-size: 17px;
+        width: fit-content;
+    }
+    .aLink {
+        font-weight: 900;
+        font-size: 25px;
+    }
+
+    #content .info::before {
+        content: "Info: ";
+    }
+    #content .info {
+        width: 90%;
+        height: 0px;
+        font-size: 20px;
+
+        /* border: solid red 2px; */
+    }
+    #content .data-container .info {
+        font-size: 0px;
+        transition: all 1s cubic-bezier(.215, .61, .355, 1);
+
+        margin-top: 5px;
+    }
+    #content .data-container:hover .info {
+        height: auto;
+        font-size: 20px;
+        transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+        /* border: solid red 2px; */
+    }
+
+
+
+    

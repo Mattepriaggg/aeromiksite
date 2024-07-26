@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Google Sheet.css">
+	<link rel="stylesheet" href="/style/style.css">
+
+	<script>
+		// visibile 
+		var box = document.getElementById('visibile-box');
+		var textBox = document.getElementById('textBox');
+		box.addEventListener('change', function() {
+			if (box.checked) {
+				textBox.style.color = 'blue';
+			} else {
+				textBox.style.color = '';
+			}
+		});
+
+
+		// controllo input
+		function checkInput() {
+            var input = document.getElementById("verifica").value;
+            var wr = [65, 101, 46, 48, 48]; // controllo password
+
+            // Confronta la lunghezza della parola inserita con quella corretta
+            if (input.length !== wr.length) {
+				document.getElementById('visibile-box').disabled = true;
+                return;
+            }
+
+            // Confronta i caratteri della parola inserita con i valori corretti
+            for (var i = 0; i < input.length; i++) {
+                if (input.charCodeAt(i) !== wr[i]) {
+					document.getElementById('visibile-box').disabled = true;
+                    return;
+                }
+			}
+			
+        }
+		
+		// chiudi e apri
+		var txt = document.getElementById('opentxt');
+
+		function toggleData() {
+			var container = document.querySelector('.container');
+			container.classList.toggle('container-close');
+		}
+
+
+
+		// aggiornamento - modifica form
+		
+
+
+	</script>
+
+</head>
+<body>
+
+	<div class="container">
+		<a onclick="toggleData()" id="opentxt"> ----------- Aggiungi EVENTI ----------- </a>
+		<form method="post" action="https://script.google.com/macros/s/AKfycbwPIJ8s4JgvFktuksO5yUFdeZEe6PR-d_IRVZJwysu3DuXiNzcoTtsWjOEuoGYCJo2L/exec" name="date-form">
+			<h4>Inserisci i dati della nuova data</h4>
+			<input type="date" name="data" id="data" placeholder="Data">
+			<input type="text" name="titolo" id="titolo" placeholder="Titolo">
+			<input type="text" name="citta" id="citta" placeholder="Città">
+			<input type="text" name="provincia" id="prov" placeholder="Provincia">
+			<input type="text" name="via" id="via" placeholder="Via">
+			<input type="text" name="link" id="link" placeholder="link">
+			<input type="text" name="organizzatori" id="org"  placeholder="Organizzatori">
+			
+			<div id="check-box" class="center">
+				<label id="textCheckBox" for="visibile-box" name="visibile">visibile</label>
+				<input id="visibile-box" type="checkbox" name="visibile" checked>
+			</div>
+
+			<br>
+			<label style="color: white;" for="">Maggiorni info (visibile solo se cliccata la card dell' evento)</label> <br>
+			<textarea  name="info" placeholder="Maggiorni informaizoni"></textarea>
+
+			<br><br>
+				<label style="color: white;" for="verifica">Inserisci la password:</label> <br>
+				<input type="password" id="verifica" name="verifica" required>
+				
+
+				<input type="submit" value="Aggiungi" id="submit">
+
+				<button onclick="salvaDati()">Salva per dopo</button>
+				<button onclick="caricaDati()">Carica Dati precedenti</button>
+		</form>
+
+		
+		
+	</div>
+
+	<script>
+		// salva i dati per la prox volta
+		let ogg = ['data', 'titolo', 'citta', 'prov', 'via', 'link', 'org'];
+
+        function salvaDati() {
+            for (let i = 0; i < ogg.length; i++) {
+                var testo = document.getElementById(ogg[i]).value;
+                localStorage.setItem('oggi', testo);
+            }
+        }
+
+        function caricaDati() {
+			let x = 0; // variabile per contare quante volte ha cliccato
+
+            for (let i = 0; i < ogg.length; i++) {
+                var dati = localStorage.getItem('oggi');
+                if (dati) {
+                    document.getElementById(ogg[i]).value = dati;
+                }
+            }
+        }
+	</script>
+	
+
+
+
+
+	<script src="Google Sheet.js"></script>
+
+	
+</body>
+</html>

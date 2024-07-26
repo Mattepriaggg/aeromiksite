@@ -1,0 +1,142 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'poppins', sans-serif;
+	font-size: 24px;
+}
+body{
+	height: fit-content;
+	padding: 50px 50px 50px 50px;
+	align-items: center;
+	justify-content: center;
+}
+
+.center{ 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.container-close *{
+	display: none;
+}
+
+
+.container{
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	flex-direction: column;
+
+	height: fit-content;
+	min-width: 200px;
+
+	padding: 30px 30px 30px 30px;
+	margin-top: 30px;
+	
+	border: 1px solid #eeeeee;
+	border-radius: 10px;
+	background-color: #ffffff18;
+	border: solid red 2px;
+}
+	/* .container #opentxt::after {
+		content: "close";
+		cursor: pointer;
+	}
+	.container-close #opentxt::after {
+		content: none;
+		cursor: pointer;
+	}
+	.container-close #opentxt::before {
+		content: "open";
+		cursor: pointer;
+	} */
+
+	.container #opentxt{
+		display: block;
+		color: rgb(190, 190, 190);
+		cursor: pointer;
+	} 
+
+h4{
+	margin-bottom: 10px;
+	font-size: 24px;
+	color: white;
+}
+
+input, textarea {
+	border: none;
+	border-bottom: solid rgb(151, 151, 151) 0.5px;}
+input{
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+	
+	max-width: none;
+	
+	min-width: 300px;
+	width: 100%;
+	
+	padding: 10px;
+	margin-bottom: 10px;
+	/* border: solid red 2px; */
+}
+textarea{
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+	min-width: 300px;
+	max-width: 70%;
+	min-height: 70px;
+	
+	width: 70%;
+	padding: 10px;
+
+	
+}
+#submit{
+	border: none;
+	background-color: orangered;
+	color: white;
+	width: 90%;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+#submit:hover{
+	background-color: #333333;
+}
+button {
+	min-width: 300px;
+	width: 30%;
+	height: 60px;
+	border-radius: 10px;
+
+}
+
+
+#check-box {
+	width: 100px;
+	
+	background-color: rgba(0, 0, 0, 0);
+	color: rgba(255, 255, 255, 0.733);
+	
+	padding: 10px 10px 10px 10px;
+	display: flex;
+}
+	#textCheckBox {
+		/* border: solid red 2px; */
+		position: absolute;
+		margin-top: 20px;
+
+		margin-top: 30px;
+	}
+
+
+
+	@media (max-width: 502px) {
+		button{
+			width: 90%;
+		}
+	}
