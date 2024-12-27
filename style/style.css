@@ -139,20 +139,8 @@ body {background-color: black;}
 
 
 /* menu mobile */
-.mobile-hamburger {
-    scale: 1;
-    opacity: 0;
-
-    position: relative;
-
-    margin-top: 10px;
-    margin-right: 20px;
-
-    width: 0px;
-    height: 0px;
-    z-index: 3;
-}
 .menu-mobile {    
+    position: fixed;
     width: 0px;
     height: 100%;
     
@@ -167,13 +155,14 @@ body {background-color: black;}
 }
     .menu-mobile-cont {
         /* border: solid red 2px; */
+        position: relative;
         left: 20%;
 
-        position: absolute;
         top: 200px;
         
     }
         .underline {
+            position: fixed;
             width: 0px;
             height: 2px;
 
@@ -242,7 +231,7 @@ body {background-color: black;}
         width: 40px;
         height: 25px;
 
-        position: absolute;
+        position: fixed;
 
         display: flex;
         flex-wrap: wrap;
@@ -257,6 +246,7 @@ body {background-color: black;}
         justify-content: end;
 
         cursor: pointer;
+        z-index: 2;
     }
     
     .mobile-hamburger .line-menu {
